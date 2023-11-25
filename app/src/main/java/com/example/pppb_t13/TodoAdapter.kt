@@ -32,6 +32,10 @@ class TodoAdapter(
                     onClickStatus(data)
                 }
 
+                txtStatus.setOnClickListener {
+                    onClickStatus(data)
+                }
+
                 when(data.status) {
                     "To do" -> {
                         txtStatus.background.setTint(ContextCompat.getColor(itemView.context, R.color.yellow_primary))
